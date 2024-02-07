@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iker Jurado Madrid</title>
+    <style>
+        .container {
+            width: 800px;
+            padding: 16px;
+            background-color: white;
+            margin: 0 auto;
+            margin-top: 100px;
+            box-shadow: 0px 0px 10px 0px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .caracteristica {
+            margin-bottom: 20px;
+        }
+
+        .caracteristica .nombre {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .caracteristica .barra {
+            height: 20px;
+            background-color: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .caracteristica .progreso {
+            height: 100%;
+            background-color: #4CAF50;
+            border-radius: 10px;
+            width: 0%;
+            transition: width 0.2s linear;
+        }
+
+        .caracteristica .valor {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1em;
+            margin-top: 5px;
+        }
+
+        .caracteristica:nth-child(1) .progreso {
+            width: 80%;
+        }
+
+        .caracteristica:nth-child(2) .progreso {
+            width: 70%;
+        }
+
+        .caracteristica:nth-child(3) .progreso {
+            width: 60%;
+        }
+
+        .caracteristica:nth-child(4) .progreso {
+            width: 90%;
+        }
+
+        .caracteristica:nth-child(5) .progreso {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Iker Jurado Madrid</h1>
+        <div class="caracteristica">
+            <p class="nombre">Nivel de conocimiento en HTML</p>
+            <div class="barra">
+                <div class="progreso"></div>
+            </div>
+            <p class="valor">80%</p>
+        </div>
+        <div class="caracteristica">
+            <p class="nombre">Conocimiento sobre Photoshop/Gimp</p>
+            <div class="barra">
+                <div class="progreso"></div>
+            </div>
+            <p class="valor">70%</p>
+        </div>
+        <div class="caracteristica">
+            <p class="nombre">Belleza</p>
+            <div class="barra">
+                <div class="progreso"></div>
+            </div>
+            <p class="valor">60%</p>
+        </div>
+        <div class="caracteristica">
+            <p class="nombre">Hambre</p>
+            <div class="barra">
+                <div class="progreso"></div>
+            </div>
+            <p class="valor">90%</p>
+        </div>
+        <div class="caracteristica">
+            <p class="nombre">Salud</p>
+            <div class="barra">
+                <div class="progreso"></div>
+            </div>
+            <p class="valor">100%</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario con efectos</title>
+  <style>
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+    }
+
+    .input-field {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .input-field:focus {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      border-color: transparent;
+      width: 100%;
+      transform: scale(1.05);
+    }
+
+    .input-field:not(:focus) {
+      border-color: #ccc;
+    }
+
+    .button-container {
+      margin-top: 10px;
+    }
+
+    .button {
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      padding: 10px;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    .button:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+  <form class="form-container">
+    <label for="name">Nombre:</label>
+    <input class="input-field" type="text" id="name" name="name">
+
+    <label for="phone">Teléfono:</label>
+    <input class="input-field" type="number" id="phone" name="phone">
+
+    <div class="button-container">
+      <button class="button" type="submit">Enviar</button>
+    </div>
+  </form>
+</body>
+</html>
