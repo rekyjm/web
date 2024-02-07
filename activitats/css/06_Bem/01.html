@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encabezado</title>
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #d32c2c;
+      padding: 20px;
+      color: #fff;
+    }
+
+    .logo {
+      font-size: 2em;
+      margin-right: 20px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    form {
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+    }
+
+    form input[type="search"] {
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      outline: none;
+    }
+
+    form input[type="submit"] {
+      margin-left: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #fff;
+      color: #9c1414;
+      cursor: pointer;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: #ec2207;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="logo">REKYBUSSINES</span>
+    <nav>
+      <a href="#home">inicio </a>
+      <a href="#about">Sobre nosotros</a>
+      <a href="#services">Servicios</a>
+      <a href="#contact">Contacta con nosotros</a>
+    </nav>
+    <form>
+      <input type="search" placeholder="Search">
+      <input type="submit" value="Go">
+    </form>
+  </header>
+</body>
+</html>

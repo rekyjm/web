@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listado de discos de Jazz</title>
+    <style>
+        .container {
+            width: 800px;
+            padding: 16px;
+            background-color: white;
+            margin: 0 auto;
+            margin-top: 100px;
+            box-shadow: 0px 0px 10px 0px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .disco {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        .disco:last-child {
+            border-bottom: none;
+        }
+
+        .titulo {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .autor {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .enlace {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .enlace:hover {
+            text-decoration: underline;
+        }
+
+        
+        .search-container {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-container input[type="text"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .search-container button {
+            padding: 8px 16px;
+            margin-left: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        .search-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Listado de discos de Jazz</h1>
+        <div class="search-container">
+            <input type="text" id="busqueda" name="busqueda" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+        </div>
+        <div class="disco">
+            <p class="titulo"><a href="disco1.html" class="enlace">come swing with me </a></p>
+            <p class="autor">Frank sinatra</p>
+        </div>
+        <div class="disco">
+            <p class="titulo"><a href="disco2.html" class="enlace">Ballads i blues</a></p>
+            <p class="autor">Nina simone</p>
+        </div>
+        <div class="disco">
+            <p class="titulo"><a href="disco3.html" class="enlace">Portrait in jazz</a></p>
+            <p class="autor">Bill evans</p>
+        </div>
+    </div>
+</body>
+</html>

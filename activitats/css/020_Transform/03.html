@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Círculos con mezcla de colores</title>
+  <style>
+    .circles {
+      position: relative;
+      height: 100px;
+      width: 100px;
+    }
+
+    .circle-red {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      background-color: red;
+      z-index: 1;
+    }
+
+    .circle-blue {
+      position: absolute;
+      top: 0;
+      left: 105px;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      background-color: rgba(3, 118, 250, 0.5);
+      z-index: 2;
+      transition: left 0.2s ease-in-out;
+    }
+
+    .circles:hover .circle-blue {
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="circles">
+    <div class="circle-red"></div>
+    <div class="circle-blue"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen con efecto</title>
+    <style>
+        .image-container {
+            display: inline-block;
+            position: relative;
+        }
+
+        .image-container img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .image-container:hover img {
+            filter: grayscale(100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.dcGd0jL1SP4fqqSQvr9yrQHaKv&pid=Api&P=0&h=180" alt="Tu imagen">
+    </div>
+</body>
+</html>

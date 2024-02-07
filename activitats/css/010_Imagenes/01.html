@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+        }
+        .chat-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 2rem;
+        }
+        .chat-message {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 1rem;
+            border-radius: 1rem;
+            padding: 0.5rem;
+            background-color: #f0f0f0;
+            max-width: 70%;
+        }
+        .chat-avatar {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 1rem;
+            background-color: #ddd;
+        }
+        .chat-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-right: 1rem;
+            color: #4a4a4a;
+        }
+        .chat-date {
+            font-size: 0.8rem;
+            color: #888;
+            margin-right: 1rem;
+        }
+        .chat-text {
+            font-size: 1rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-message">
+            <img src="https://i.pinimg.com/564x/df/d1/1a/dfd11a5d70f31bc4dda8a6cb31aa542d.jpg"  alt="Avatar 1" class="chat-avatar">
+            <div class="chat-name">Ana</div>
+            <div class="chat-date">01/01/2022 20:30</div>
+            <div class="chat-text">¡Hola, ¿cómo estás?</div>
+        </div>
+        <div class="chat-message">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.46xn-jPtJmduMGhlUieOxgHaHa&pid=Api&P=0&h=180" alt="Avatar 2" class="chat-avatar">
+            <div class="chat-name">juan</div>
+            <div class="chat-date">01/01/2022 20:31</div>
+            <div class="chat-text">¡Hola, Ana! Estoy muy bien, gracias. ¿Y tú?</div>
+        </div>
+        <div class="chat-message">
+            <img src="https://i.pinimg.com/564x/df/d1/1a/dfd11a5d70f31bc4dda8a6cb31aa542d.jpg" alt="Avatar 1" class="chat-avatar">
+            <div class="chat-name">Ana</div>
+            <div class="chat-date">01/01/2022 20:32</div>
+            <div class="chat-text">Estoy genial, gracias. Y tú, ¿qué estás haciendo?</div>
+        </div>
+    </div>
+</body>
+</html>

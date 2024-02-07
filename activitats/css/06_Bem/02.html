@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de comentarios</title>
+  <style>
+    form {
+      margin-bottom: 20px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .comments {
+      list-style: none;
+      padding: 0;
+    }
+
+    .comments li {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .comments li .comment-author {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Comentarios</h1>
+  <form action="/submit-comment" method="post">
+    <label for="author">Autor:</label>
+    <input type="text" name="author" id="author" required>
+    <br>
+    <label for="comment">Comentario:</label>
+    <textarea name="comment" id="comment" rows="5" required></textarea>
+    <br>
+    <button type="submit">Enviar comentario</button>
+  </form>
+  <ul class="comments">
+    <li>
+      <span class="comment-author">Autor 1:</span>
+      <p>Este es un comentario de ejemplo.</p>
+    </li>
+    <li>
+      <span class="comment-author">Autor 2:</span>
+      <p>Otro comentario de ejemplo.</p>
+    </li>
+  </ul>
+</body>
+</html>
